@@ -376,7 +376,7 @@ input.about-mobile-number {
 
 .journey-content {
   text-align: center;
-  width: 80%;
+  width: 85%;
   margin: 0 5% 3em 5%;
   padding: 2rem 1rem;
   border-radius: var(--border-radius);
@@ -1016,6 +1016,46 @@ footer .social a {
   color: var(--hm-green);
 }
 
+@media(max-width:1280px) {
+  .nav-logo {
+    max-height: 50px;
+  }
+
+  .navbar-nav .nav-item {
+    padding: 8px 0.25rem;
+  }
+
+  .about-left-content h1 {
+    font-size: 2.8rem;
+  }
+
+  .about-left-content p.about-description {
+    font-size: 1.5rem;
+    margin-bottom: 1rem;
+  }
+
+  .journey {
+    margin-top: 0px;
+  }
+
+  .profile-price {
+    font-size: 2rem;
+  }
+
+  .profile-teach-class {
+    padding: 5px 12px;
+  }
+
+  .profile-summary {
+    margin-top: 15px;
+    font-size: 1.2rem;
+  }
+
+  .visit-profile {
+    margin-top: 13px;
+  }
+}
+
 @media(max-width:540px) {
   .journey-container .row div:nth-child(even) .journey-content {
     float: left;
@@ -1042,7 +1082,7 @@ footer .social a {
   }
 
   .slider-container .highlight-text {
-   display: none;
+    display: none;
   }
 
   .slider-image-container {
