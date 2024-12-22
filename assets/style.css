@@ -1015,3 +1015,43 @@ footer .social a {
 .youtube:hover {
   color: var(--hm-green);
 }
+
+@media(max-width:540px) {
+  .journey-container .row div:nth-child(even) .journey-content {
+    float: left;
+  }
+
+  .journey-content {
+    width: 100%;
+    margin: 0 0 2rem 0;
+  }
+
+  .profile-teach-class {
+    display: inline-block;
+    margin-bottom: 15px;
+  }
+
+  .slider-text-content {
+    width: 100%;
+    float: left;
+  }
+
+  .highlight-text {
+    top: 68%;
+    width: 90%;
+  }
+
+  .slider-container .highlight-text {
+   display: none;
+  }
+
+  .slider-image-container {
+    width: 100%;
+  }
+
+  .review .review-message {
+    top: 44.5%;
+    transform: none;
+    right: 12px;
+  }
+}
