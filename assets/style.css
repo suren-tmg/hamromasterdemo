@@ -181,7 +181,8 @@ a:active {
   border: 1px solid var(--hm-green);
 }
 
-.navbar-nav .nav-link.active, .navbar-nav .nav-link.show {
+.navbar-nav .nav-link.active,
+.navbar-nav .nav-link.show {
   color: var(--hm-green);
 }
 
@@ -1412,6 +1413,107 @@ footer .social a {
 
 .study-abroad-slider-container .slick-dots li.slick-active button {
   border-color: var(--hm-light-blue);
+}
+
+/*courses*/
+.breadcrumb {
+  padding: 25px;
+  background-color: var(--hm-green);
+  color: white;
+  padding-bottom: 15rem;
+}
+
+.breadcrumb-content ul {
+  padding: 0px;
+  margin: 0px;
+}
+
+.breadcrumb-content ul li {
+  display: inline-block;
+  list-style: none;
+}
+
+.breadcrumb-content ul li::before {
+  content: ">";
+  margin-right: 6px;
+  margin-left: 4px;
+}
+
+.breadcrumb-content ul>li:first-child:before {
+  content: "";
+  margin-right: 0px;
+}
+
+.breadcrumb-content ul li,
+.breadcrumb-content ul li a {
+  font-size: 1.25rem;
+  color: white;
+}
+
+.breadcrumb-title {
+  font-size: 2rem;
+  margin-top: 1rem;
+  color: white;
+}
+
+.courses-container {
+  margin-top: -15.5rem;
+}
+
+.courses-contents .CourseCard span.category {
+  font-size: 1rem;
+}
+
+.courses-contents .CourseCard span.rating {
+  font-size: 1rem;
+}
+
+.courses-contents .CourseCard .top-contents,
+.courses-contents .CourseCard .bottom-contents {
+  padding: 10px;
+}
+
+.courses-contents .discount-pointer {
+  font-size: 16px;
+  height: 34px;
+  line-height: 34px;
+}
+
+.courses-contents .discount-pointer:before {
+  border-top: 17px solid transparent;
+  border-bottom: 17px solid transparent;
+}
+
+.courses-contents span.current-price,
+.courses-contents span.old-price {
+  font-size: 1.25rem;
+}
+
+.courses-contents h1.course-title {
+  font-size: 1.5rem;
+}
+
+.courses-contents .button-container button {
+  font-size: 1rem;
+}
+
+.courses-container .filter-container {
+  margin-bottom: 2rem;
+}
+
+.courses-container .text-container h4 {
+  color: white;
+  margin-top: 1.5rem;
+  margin-bottom: 0px;
+}
+
+.courses-container .stars i {
+  font-size: 2rem;
+}
+
+.courses-container .stars i:hover::before {
+  content: "\f005";
+  color: var(--hm-golden);
 }
 
 @media(max-width:1280px) {
