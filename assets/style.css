@@ -13,6 +13,7 @@
   --hm-journey-bg: #fff6ea;
   --hm-gradient: linear-gradient(90deg, rgba(255, 247, 173, 1) 0%, rgba(255, 169, 249, 1) 100%);
   --border-radius-small: 8px;
+  --hm-light-grey: #eef1f7;
 }
 
 html,
@@ -1516,6 +1517,312 @@ footer .social a {
   color: var(--hm-golden);
 }
 
+/*Course Detail*/
+.course-detail-left {
+  background-color: var(--hm-light-grey);
+  border-radius: var(--border-radius);
+  padding: 25px;
+}
+
+.course-detail-category {
+  color: var(--hm-light-blue);
+  font-size: 1.5rem;
+  margin-bottom: 0px;
+}
+
+.course-detail-title {
+  font-size: 2.8rem;
+  font-weight: 400;
+}
+
+.course-detail-rating span {
+  margin-right: 20px;
+  font-size: 1.25rem;
+  color: grey;
+}
+
+.course-detail-tutor-profile-image img {
+  max-height: 80px;
+  margin-right: 15px;
+}
+
+.course-detail-tutor h3 {
+  color: grey;
+  margin-top: 1.5rem;
+}
+
+.course-detail-tutor-detail {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+
+.course-detail-tutor-info span {
+  color: grey;
+  margin-right: 8px;
+  font-size: 1.1rem;
+}
+
+.course-detail-tutor-info p {
+  font-size: 1.8rem;
+  margin-bottom: 0px;
+}
+
+.golden {
+  color: var(--hm-golden);
+}
+
+.course-detail-contents {
+  margin-top: 1.5rem;
+}
+
+.course-detail-contents .nav-link {
+  color: #000;
+  font-size: 1.25rem;
+}
+
+.course-detail-contents .nav-link.active {
+  background-color: transparent;
+  color: var(--hm-light-blue);
+}
+
+.course-detail-contents #pills-tab {
+  border-top: 1px solid var(--light-grey);
+  border-bottom: 1px solid var(--light-grey);
+  padding: 5px 0;
+}
+
+.course-detail-contents #pills-tabContent {
+  padding: 8px 12px;
+}
+
+.course-detail-contents .course-details-description p {
+  margin-bottom: 0.5rem;
+}
+
+.course-detail-contents .course-details-description {
+  font-size: 1.2rem;
+  height: 120px;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  transition: all 0.5s linear;
+}
+
+.full {
+  height: auto !important;
+  transition: all 0.5s linear;
+}
+
+.faq-container .accordion-item {
+  margin-bottom: 15px;
+  border: 0px;
+}
+
+.faq-container .accordion-button {
+  font-size: 1.25rem;
+}
+
+.faq-container .accordion-body {
+  font-size: 1.1rem;
+}
+
+.faq-container .accordion-button:not(.collapsed) {
+  background-color: transparent;
+  color: var(--hm-light-blue);
+}
+
+.course-detail-right {
+  background-color: var(--hm-light-grey);
+  border-radius: var(--border-radius);
+  border: 1px solid var(--hm-light-blue);
+}
+
+.promotionl-video {
+  padding: 25px;
+  border-bottom: 2px solid var(--light-grey);
+}
+
+#promo-video {
+  width: 100%;
+  height: auto;
+  aspect-ratio: 16/9;
+}
+
+.cost-container {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 2rem;
+}
+
+.course-detail-right .cost-container .discount-pointer {
+  height: 27px;
+  line-height: 27px;
+  padding: 0 15px;
+  font-size: 18px;
+}
+
+.course-detail-right .cost-container .discount-pointer:before {
+  right: -13px;
+  border-left: 14px solid red;
+  border-top: 14px solid transparent;
+  border-bottom: 14px solid transparent;
+}
+
+.course-detail-right .cost-container span.old-price {
+  font-size: 1.25em
+}
+
+.course-detail-right .cost-container h3.course-cost {
+  font-size: 3rem;
+  color: var(--hm-light-blue);
+}
+
+.action-buttons a {
+  padding: 12px;
+  text-align: center;
+  display: block;
+  font-size: 1.5rem;
+  color: white;
+  border-radius: var(--border-radius);
+  margin-top: 1.5rem;
+}
+
+.action-buttons a.add-to-cart {
+  background-color: var(--hm-green);
+}
+
+.action-buttons a.enroll-now {
+  background-color: var(--hm-red);
+}
+
+.support-info {
+  font-size: 1.25rem;
+  color: grey;
+  text-align: center;
+  margin-top: 1rem;
+  margin-bottom: 0px;
+}
+
+.support-info i {
+  margin-right: 8px;
+}
+
+.course-detail-right .information {
+  padding: 10px 25px;
+  display: flex;
+  justify-content: space-between;
+  font-size: 1.1rem;
+  border-bottom: 2px solid var(--light-grey);
+}
+
+.course-detail-right .information:last-child {
+  border-bottom: 0px;
+}
+
+.course-detail-right .information .left {
+  font-size: 1.3rem;
+  color: grey;
+}
+
+.course-detail-right .information .left i {
+  margin-right: 10px;
+}
+
+
+.share-container {
+  padding: 25px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+}
+
+.share-container .left-text {
+  text-align: center;
+  margin-right: 15px;
+  font-size: 1.25rem;
+}
+
+.no-border-bottom {
+  border-bottom: 0px !important;
+}
+
+/*Home Tuition*/
+.checkbox label {
+  display: block;
+}
+
+.checkbox-header {
+  font-size: 1.2rem;
+  margin: 3px 0;
+}
+
+.home-tuition-container {
+  margin: 3rem 0;
+}
+
+.home-tuition-container .stars i {
+  font-size: 2rem;
+}
+
+.home-tuition-container .stars i:hover::before {
+  content: "\f005";
+  color: var(--hm-golden);
+}
+
+.home-tuition-container .tutor-card .profile-image {
+  max-height: 60px;
+}
+
+.home-tuition-container .profile-contents {
+  margin-left: 60px;
+}
+
+.home-tuition-container .profile-name {
+  font-size: 1.5em;
+}
+
+.home-tuition-container .profile-price {
+  color: #44aaff;
+  font-size: 1.7rem;
+}
+
+.home-tuition-container .profile-moto {
+  margin-left: 12px;
+  display: block;
+}
+
+.home-tuition-container .profile-info span {
+  font-size: 16px;
+  margin-top: 4px;
+}
+
+.home-tuition-container .teaching-classes {
+  margin: 15px 0 0 15px;
+}
+
+.home-tuition-container .teaching-classes {
+  font-size: 14px;
+}
+
+.home-tuition-container .profile-teach-class {
+  margin-left: 5px;
+  padding: 4px 10px;
+}
+
+.home-tuition-container .profile-summary {
+  margin-top: 15px;
+  font-size: 1.1rem;
+}
+
+.home-tuition-container .visit-profile {
+  margin-top: 20px;
+}
+
+.home-tuition-container .tutor-card .button-container i {
+  transform: rotate(0deg);
+}
+
 @media(max-width:1280px) {
   .nav-logo {
     max-height: 50px;
@@ -1599,6 +1906,30 @@ footer .social a {
   .foreign-info-container span.value {
     color: grey;
     margin-left: 10%;
+  }
+
+  .home-tuition-container .profile-price {
+    font-size: 1.4rem;
+  }
+
+  .home-tuition-container .tutor-card {
+    padding: 20px;
+  }
+
+  .home-tuition-container .profile-moto {
+    font-size: 16px;
+  }
+
+  .home-tuition-container .visit-profile {
+    margin-top: 10px;
+  }
+
+  .home-tuition-container .profile-summary {
+    margin-top: 10px;
+    margin-bottom: 0px;
+    font-size: 1rem;
+    height: 68px;
+    overflow: hidden;
   }
 }
 
