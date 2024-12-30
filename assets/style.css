@@ -1004,8 +1004,20 @@ footer .social a {
   margin-right: 15px;
 }
 
+.whatsapp {
+  color: #25d366;
+}
+
 .facebook {
   color: #3b5998;
+}
+
+.messenger {
+  color: #0695FF;
+}
+
+.linkedin {
+  color: #0072b1;
 }
 
 .instagram {
@@ -1457,7 +1469,8 @@ footer .social a {
   color: white;
 }
 
-.courses-container {
+.courses-container,
+.home-tuition-detail-container {
   margin-top: -15.5rem;
 }
 
@@ -1600,12 +1613,24 @@ footer .social a {
   margin-bottom: 0.5rem;
 }
 
-.course-detail-contents .course-details-description {
+.course-detail-left .course-detail-contents .course-details-description {
   font-size: 1.2rem;
   height: 120px;
   overflow: hidden;
   text-overflow: ellipsis;
   transition: all 0.5s linear;
+}
+
+.course-detail-contents .course-details-description {
+  font-size: 1.2rem;
+  height: 130px;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  transition: all 0.5s linear;
+}
+
+.bootstrap-select {
+  border-radius: 15px;
 }
 
 .full {
@@ -1677,7 +1702,13 @@ footer .social a {
   color: var(--hm-light-blue);
 }
 
-.action-buttons a {
+.action-buttons-inline {
+  display: flex;
+  justify-content: space-around;
+}
+
+.action-buttons a,
+.action-buttons-inline a {
   padding: 12px;
   text-align: center;
   display: block;
@@ -1687,11 +1718,21 @@ footer .social a {
   margin-top: 1.5rem;
 }
 
-.action-buttons a.add-to-cart {
+.action-buttons-inline a {
+  padding: 8px 15px;
+  font-size: 1.2rem;
+  width: 100%;
+  text-align: center;
+  margin: 0 7.5px
+}
+
+.action-buttons a.add-to-cart,
+.action-buttons-inline a.add-to-cart {
   background-color: var(--hm-green);
 }
 
-.action-buttons a.enroll-now {
+.action-buttons a.enroll-now,
+.action-buttons-inline a.enroll-now {
   background-color: var(--hm-red);
 }
 
@@ -1707,7 +1748,8 @@ footer .social a {
   margin-right: 8px;
 }
 
-.course-detail-right .information {
+.course-detail-right .information,
+.home-tuition-detail-right .information {
   padding: 10px 25px;
   display: flex;
   justify-content: space-between;
@@ -1715,16 +1757,19 @@ footer .social a {
   border-bottom: 2px solid var(--light-grey);
 }
 
-.course-detail-right .information:last-child {
+.course-detail-right .information:last-child,
+.home-tuition-detail-right .information:last-child {
   border-bottom: 0px;
 }
 
-.course-detail-right .information .left {
+.course-detail-right .information .left,
+.home-tuition-detail-right .information .left {
   font-size: 1.3rem;
   color: grey;
 }
 
-.course-detail-right .information .left i {
+.course-detail-right .information .left i,
+.home-tuition-detail-right .information .left i {
   margin-right: 10px;
 }
 
@@ -1821,6 +1866,263 @@ footer .social a {
 
 .home-tuition-container .tutor-card .button-container i {
   transform: rotate(0deg);
+}
+
+/*Home Tuition Container*/
+.home-tuition-detail-left {
+  background-color: var(--hm-light-grey);
+  border-radius: var(--border-radius);
+  padding: 25px;
+}
+
+.home-tuition-detail-left .profile-image {
+  max-height: 100px;
+  float: left;
+}
+
+.home-tuition-detail-left .my-profiles {
+  font-size: 1.5rem;
+  color: #6e757c;
+}
+
+.home-tuition-detail-left .my-profiles a {
+  height: 50px;
+  width: 50px;
+  margin-left: 5px;
+  font-size: 2rem;
+}
+
+.home-tuition-detail-left .course-detail-contents {
+  margin-top: .8rem;
+}
+
+.booking-div .form-control {
+  margin-bottom: 1.5rem;
+}
+
+.form-control.datepicker {
+  height: 50px;
+  border: 2px solid black;
+  border-radius: var(--border-radius);
+  padding: 0 12px;
+  line-height: 50px;
+}
+
+.booking-div label {
+  display: block;
+  margin-bottom: 4px;
+}
+
+.time {
+  height: 50px;
+  border: 2px solid black;
+  border-radius: var(--border-radius);
+}
+
+.clock-timepicker {
+  width: 100%;
+}
+
+.pricing-container label {
+  font-size: 2rem;
+  color: var(--hm-light-blue);
+  vertical-align: middle;
+}
+
+.pricing-container label.pricing-title {
+  background-color: var(--hm-light-blue);
+  color: white;
+  font-size: 1.25rem;
+  padding: 5px 10px;
+  border-radius: var(--border-radius);
+  margin-right: 10px;
+}
+
+.pricing-container label span {
+  font-size: 1.1rem;
+  color: grey;
+  margin-left: 8px;
+  vertical-align: top;
+  display: inline-block;
+  margin-top: 5px;
+}
+
+.terms {
+  font-size: 1.25rem;
+  margin-top: 1rem;
+}
+
+.terms a {
+  color: var(--hm-light-blue);
+}
+
+.button-container a {
+  padding: 8px 30px;
+  border-radius: var(--border-radius);
+  color: white;
+  font-size: 1.25rem;
+}
+
+.button-container a.book-now {
+  background-color: var(--hm-green);
+}
+
+.button-container a.payment {
+  background-color: var(--hm-red);
+}
+
+.button-container span.sandwitch {
+  vertical-align: top;
+  display: inline-block;
+  margin-top: -5px;
+  margin-left: 10px;
+  margin-right: 10px;
+}
+
+.home-tuition-detail-right {
+  background-color: var(--hm-light-grey);
+  border-radius: var(--border-radius);
+  border: 1px solid var(--hm-light-blue);
+}
+
+.home-tuition-detail-right .tutor-card {
+  padding: 0px 15px 0px 15px;
+}
+
+.home-tuition-detail-right .profile-image {
+  height: 60px;
+  float: left;
+}
+
+.home-tuition-detail-right .profile-contents {
+  margin-left: 60px;
+}
+
+.home-tuition-detail-right .profile-price {
+  font-size: 1.5rem;
+  display: block;
+  margin-left: 13px;
+}
+
+.home-tuition-detail-right .profile-name {
+  font-size: 1.25rem;
+}
+
+.home-tuition-detail-right .teaching-classes {
+  margin: 5px 0 0 15px;
+  font-size: 15px;
+}
+
+.home-tuition-detail-right .teach-you {
+  display: block;
+  width: 100%;
+}
+
+.home-tuition-detail-right .teaching-classes .profile-teach-class {
+  margin-left: 0px;
+  margin-right: 4px;
+  margin-top: 4px;
+  display: inline-block;
+  padding: 2px 10px;
+  font-size: .8rem;
+}
+
+.home-tuition-detail-right .visit-profile {
+  margin-top: 15px;
+}
+
+.home-tuition-detail-right .button-container button {
+  padding: 5px 0;
+  font-size: 17px;
+}
+
+.home-tuition-detail-right .profile-detail-container {
+  background: white;
+  padding: 10px 5px;
+  margin-left: 10px;
+  margin-top: -80px;
+  margin-right: 10px;
+}
+
+.home-tuition-detail-right .tutor-card .button-container i {
+  transform: rotate(0deg);
+}
+
+.home-tuition-detail-right .course-cost {
+  font-size: 2.5rem;
+  color: var(--hm-light-blue);
+  margin-bottom: 0px;
+  text-align: center;
+  line-height: 0.5rem;
+}
+
+.home-tuition-detail-right .cost-container .left {
+  width: 100%
+}
+
+.home-tuition-detail-right .cost-container .left span {
+  color: #000;
+  float: right;
+  font-size: 1.25rem;
+}
+
+#tutor-slider {
+  margin-bottom: 10px;
+}
+
+#tutor-slider .slick-dots {
+  bottom: 2px;
+}
+
+#tutor-slider .slick-slide img.verified-profile {
+  display: inline;
+}
+
+.add-to-card-container {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  margin: 1.5rem 0;
+}
+
+.add-to-card-container a {
+  padding: 15px 25px;
+  text-align: center;
+  font-size: 2.5rem;
+  height: 50px;
+  line-height: 15px;
+  color: white;
+  margin: 0 7.5px;
+  border-radius: var(--border-radius-small);
+}
+
+.add-to-card-container a.minus-button {
+  background-color: var(--hm-red);
+}
+
+.add-to-card-container a.plus-button {
+  background-color: var(--hm-green);
+}
+
+.counter {
+  text-align: center;
+  line-height: 1;
+  height: 50px;
+  font-size: 1.25rem;
+}
+
+.book-cover {
+  border-radius: var(--border-radius-small);
+}
+
+.slider-nav .slick-slide {
+  filter: grayscale(100%);
+  opacity: 0.25;
+}
+
+.slider-nav .slick-slide.slick-current {
+  filter: grayscale(0%);
+  opacity: 1;
 }
 
 @media(max-width:1280px) {
