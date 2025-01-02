@@ -2125,6 +2125,58 @@ footer .social a {
   opacity: 1;
 }
 
+.registration-form .journey {
+  margin-top: 0px;
+}
+
+.registration-form label {
+  margin-top: 15px;
+  font-size: 1.25rem;
+}
+
+.registration-form .input-field {
+  height: 45px;
+  line-height: 45px;
+  font-size: 1.25rem;
+  border: 2px solid black;
+  border-radius: var(--border-radius-small);
+}
+
+.registration-form .section-header {
+  margin-bottom: 0.5rem;
+}
+
+.login-form label {
+  font-size: 1.5rem;
+  margin-top: 25px;
+}
+
+.login-form .input-field {
+  height: 50px;
+  line-height: 50px;
+  font-size: 1.5rem;
+  border: 2px solid black;
+  border-radius: var(--border-radius);
+}
+
+.login-form .group-mobile {
+  margin-top: 0px;
+}
+
+.login-form .sub-text {
+  font-size: 1.25rem;
+}
+
+.login-form a {
+  font-size: 1.25rem;
+  margin-top: 25px;
+  display: block;
+}
+
+.login-form .journey {
+  margin-top: 18px;
+}
+
 @media(max-width:1280px) {
   .nav-logo {
     max-height: 50px;
