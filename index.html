@@ -1308,6 +1308,13 @@
                         duration: 750,
                         easing: 'linear',
                         queue: false,
+                    },                   
+                    onLayout: function () {
+                        forceLoad();
+                        setTimeout(function () {
+                            html_height = $container.height();
+                            $(".gallery-container").height(html_height - 10);
+                        }, 500);
                     }
                 });
                 return false;
